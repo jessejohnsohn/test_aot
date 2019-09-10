@@ -1,5 +1,5 @@
 import { Component } from "@angular/core";
-import { pFrags } from "./frags";
+import { frags } from "./frags";
 import { FormControl } from "@angular/forms";
 
 @Component({
@@ -11,7 +11,9 @@ export class AppComponent {
   control = new FormControl("");
   name = "Angular";
 
+  frags = frags;
+
   navigateTo(val: number) {
-    return pFrags.hello(val);
+    return frags.hello(val);
   }
 }

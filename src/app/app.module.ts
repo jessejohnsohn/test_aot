@@ -5,15 +5,15 @@ import { RouterModule, Routes } from "@angular/router";
 
 import { AppComponent } from "./app.component";
 import { HelloComponent } from "./hello.component";
-import { pFrags } from "./frags";
 import {
   RootRouterLinkDirective,
   RootRouterLinkWithHrefDirective
 } from "./app-root-router-link.directive";
+import { paths } from "./frags";
 
 const routes: Routes = [
   {
-    path: pFrags.moduleRelativePath,
+    path: paths.relative,
     component: HelloComponent
   }
 ];

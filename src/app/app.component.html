@@ -1,4 +1,7 @@
 <router-outlet></router-outlet>
 
 <input [formControl]="control" />
-<a [routerLink]="navigateTo(control.value)">Click me</a>
+<br />
+<a [routerLink]="navigateTo(control.value)">Click me I work with AOT!</a>
+<br />
+<a [routerLink]="frags.hello(control.value)">Click me I don't!</a>
